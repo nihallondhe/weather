@@ -9,7 +9,7 @@ def home(request):
 			if request.method == 'POST':
 					searchWord = request.POST.get('search','')
 					city=searchWord
-					url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid=946758bb24b6ec04e31730074bb296d0'
+					url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid=fdndfjnldf232323BALDLSDNLA
 					data = requests.get(url).json()
 					hum ={'city' : data['name'],'weather':data['weather'][0]['icon'],'temp':data['main']['temp'],'Humidity':data['main']['humidity']}
 					lat = data['coord']['lat']
